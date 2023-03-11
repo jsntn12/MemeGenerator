@@ -23,7 +23,6 @@ form.addEventListener("submit", function(event){
     memeDiv.append(imgTopText, imgBottomText);
     memeDiv.addEventListener('click', handleClick)
    
-    // add the meme div to the createMeme div
     createMeme.append(memeDiv);
     
     
