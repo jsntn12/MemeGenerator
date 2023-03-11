@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meme Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <section class="formArea">
+            <h1>Meme Generator</h1>
+            <h2>To start, add URL to the image you want to use, add text to the top and/or bottom of the image. </h2>
+            <form action="addMeme" id="addMeme">
+                <label for="imageURL">Image URL:</label>
+                <input type="url" class="formInput" id="imageURL" placeholder="What's the URL for your meme Image?">
+                <br>
+                <label for="topText">Text at the top of meme:</label>
+                <input type="text" class="formInput" id="topText" placeholder="[Optional] What text do you want at the top of the meme?">
+                <br>
+                <label for="bottomText">Text at the bottom of meme:</label>
+                <input type="text" class="formInput" id="bottomText" placeholder="[Optional] What text do you want at the top of the meme?">
+                <br>
+                <button type="submit" class="submit">Create Meme!</button>
+            </form>
+        </section>
+        <h3>Click to delete memes</h3>
+        <h4>If the image is black, the URL is invalid.</h4>
+        <section class="createMeme"></section>
+    </section>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
